@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>It Works!</title>
+<script>
+function sendMessage() {
+	var message = {"cmd":"increment"};
+	native.postMessage(message);
+
+}
+</script>
+</head>
+<body>
+	It Works! <button type="button" onclick="sendMessage()">Click Me!</button>
+</body>

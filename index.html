@@ -1,20 +1,3 @@
-<!-- <html>
-<head>
-<title>It Works!</title>
-<script>
-function sendMessage() {
-	var message = {"cmd":"increment"};
-	native.postMessage(message);
-
-}
-</script>
-</head>
-<body>
-	It Works! <button type="button" onclick="sendMessage()">Click Me!</button>
-</body> -->
-
-<!DOCTYPE html>
- 
 <html>
 <head>
     <title>Page</title>
@@ -25,8 +8,11 @@ function sendMessage() {
 <script>
     var btnCallSwift = document.getElementById('btnCallSwift');
     btnCallSwift.onclick = function(){
-        interOp.callSwift("Hi, I'm calling you from Javascript");
+        var a = interOp.callSwift("Hi, I'm calling you from Javascript");
+    	document.getElementById("sample").innterHTML = a;
     }
 </script>
+<div id="sample">
+</div>
 </body>
 </html>

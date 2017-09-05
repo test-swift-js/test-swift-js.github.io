@@ -9,8 +9,8 @@
     var btnCallSwift = document.getElementById('btnCallSwift');
     btnCallSwift.onclick = function(){
         interop.callSwift("Hi, I'm calling you from Javascript");
-	//var a = somevalue().data;
-	document.getElementById("sample").innerHTML = somevalue();
+	var a = somevalue()
+	document.getElementById("sample").innerHTML = a.data;
     }
 </script>
 <div id="sample">
